@@ -11,33 +11,33 @@ export default function Footer() {
             </a>
             <p className="footer-tagline">We ship products, not projects.</p>
           </div>
-          <div className="footer-links">
+          {/* <div className="footer-links">
             <a href="#services">Terms &amp; Conditions</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Refund &amp; Cancellation</a>
-          </div>
+          </div> */}
           <div className="footer-right">
             <div className="footer-socials">
               <a
-                href="#"
+                href="mailto:one@anjanex.com"
                 className="footer-social"
-                aria-label="YouTube"
+                aria-label="EMail"
                 data-hover
               >
-                <svg
-                  width="18"
-                  height="18"
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  width="22" height="22"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="1.8"
-                >
-                  <rect x="2" y="4" width="20" height="16" rx="4" />
-                  <polygon points="10,8.5 16,12 10,15.5" />
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="M22 6l-10 7L2 6" />
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://x.com/anjanexofficial"
                 className="footer-social"
                 aria-label="Twitter"
                 data-hover
@@ -52,7 +52,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/anjanexofficial/"
                 className="footer-social"
                 aria-label="Instagram"
                 data-hover
@@ -90,7 +90,7 @@ export default function Footer() {
               </a>
             </div>
             <span className="footer-copy">
-              &copy; 2026 Anjanex. All rights reserved.
+              &copy; {new Date(Date.now()).getFullYear()} Anjanex. All rights reserved.
             </span>
           </div>
         </div>

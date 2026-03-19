@@ -39,10 +39,10 @@ function StatNumber({ target }: { target: number }) {
 }
 
 const STATS = [
-  { target: 50, suffix: "+", label: "Products Shipped" },
-  { target: 30, suffix: "+", label: "Startups Scaled" },
+  { target: 21, suffix: "+", label: "Products Shipped" },
+  { target: 10, suffix: "+", label: "Startups Scaled" },
   { target: 7, suffix: "+", label: "Years Avg. Experience" },
-  { target: 3, suffix: "x", label: "Avg. Revenue Lift" },
+  { target: 2.7, suffix: "x", label: "Avg. Revenue Lift" },
 ];
 
 export default function Stats() {

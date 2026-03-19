@@ -125,7 +125,7 @@ export default function Hero({ preloaderDone }: HeroProps) {
                 animate={animateState === 'visible' ? { y: '0%' } : { y: '100%' }}
                 transition={{ duration: 1.6, ease: lineEase, delay: 0.7 }}
               >
-                that make money.
+                that makes money.
               </motion.span>
             </span>
           </h1>
@@ -135,7 +135,7 @@ export default function Hero({ preloaderDone }: HeroProps) {
             animate={animateState === 'visible' ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 1.4, ease: entryEase, delay: 1.4 }}
           >
-            From a raw idea to a product your users can&apos;t stop talking about — we design, develop, and launch digital products that turn startups into success stories.
+            From a raw idea to a product your users can&apos;t stop talking about - we design, develop, and launch digital products that turn startups into success stories.
           </motion.p>
           <motion.div
             className="hero-actions"
@@ -167,7 +167,7 @@ export default function Hero({ preloaderDone }: HeroProps) {
               <span className="hero-avatar" style={{ background: 'linear-gradient(135deg,#4facfe,#00f2fe)' }}>A</span>
               <span className="hero-avatar" style={{ background: 'linear-gradient(135deg,#a18cd1,#fbc2eb)' }}>K</span>
             </div>
-            <span className="hero-trust-label">Trusted by <strong>30+</strong> startups across 8 countries</span>
+            <span className="hero-trust-label">Trusted by <strong>21+</strong> startups across 5 countries</span>
           </motion.div>
         </div>
         <motion.div
