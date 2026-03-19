@@ -156,8 +156,14 @@ export default function Navigation() {
           <a href="#about" className="mobile-menu-link" onClick={handleMobileLinkClick}>
             About
           </a>
-          <a href="#contact" className="mobile-menu-link" onClick={handleMobileLinkClick}>
-            Contact
+          <a
+            href="https://wa.me/917977933565?text=Hello%2C%20I%20would%20like%20to%20get%20in%20touch."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label='LetsTalk'
+            className="mobile-menu-link"
+          >
+            Let&apos;s Talk
           </a>
         </div>
       </div>
