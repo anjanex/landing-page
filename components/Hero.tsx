@@ -9,8 +9,8 @@ interface HeroProps {
 }
 
 const ROTATING_TEXTS = ['stunning websites', 'scalable products', 'AI-powered solutions', 'brand experiences'];
-const SCENE_INTERVAL = 3800;
-const SCENE_START_DELAY = 2800;
+const SCENE_INTERVAL = 4400;
+const SCENE_START_DELAY = 800;
 
 const entryEase: [number, number, number, number] = [0.16, 1, 0.3, 1];
 const lineEase: [number, number, number, number] = [0.16, 1, 0.3, 1];
@@ -33,11 +33,10 @@ export default function Hero({ preloaderDone }: HeroProps) {
 
     const next = (current + 1) % ROTATING_TEXTS.length;
 
-    // Step 1: mark current as exiting, remove active
+    // Step 1: mark current as exiting
     setExitingText(current);
-    setActiveText(null);
 
-    // Step 2: after exit animation completes, show next
+    // Step 2: after exit animation completes, show next text and scene
     setTimeout(() => {
       setExitingText(null);
       setActiveText(next);

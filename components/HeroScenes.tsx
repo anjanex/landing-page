@@ -148,7 +148,7 @@ export default function HeroScenes({ activeScene, started }: HeroScenesProps) {
         ref={scope0}
         className={`scene${activeScene === 0 ? ' scene--active' : ''}`}
         data-scene="0"
-        style={!started ? { opacity: 0 } : undefined}
+        style={{ opacity: 0 }}
       >
         <div className="scene-layer" data-depth="0.2">
           <div className="scene-blob scene-blob--1"></div>
