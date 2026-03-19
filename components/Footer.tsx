@@ -26,6 +26,8 @@ export default function Footer() {
                 className="footer-social"
                 aria-label="EMail"
                 data-hover
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <MdMailOutline size={23} />
               </a>
@@ -34,6 +36,8 @@ export default function Footer() {
                 className="footer-social"
                 aria-label="Twitter"
                 data-hover
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaXTwitter size={20} />
               </a>
@@ -42,6 +46,8 @@ export default function Footer() {
                 className="footer-social"
                 aria-label="Instagram"
                 data-hover
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaInstagram size={22} />
               </a>

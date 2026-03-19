@@ -25,7 +25,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Anjanex — We Ship Products, Not Projects",
+  title: "Anjanex - We Ship Products, Not Projects",
   description:
     "We partner with startups to design, develop, and launch digital products that drive real growth — Web, Mobile, AI, and beyond.",
 };
