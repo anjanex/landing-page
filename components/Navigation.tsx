@@ -108,7 +108,13 @@ export default function Navigation() {
               FAQ
             </a>
           </div>
-          <a href="#contact" className="nav-cta" data-hover onClick={handleAnchorClick}>
+          <a
+            href="https://wa.me/917977933565?text=Hello%2C%20I%20would%20like%20to%20get%20in%20touch."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label='LetsTalk'
+            className="nav-cta" data-hover
+          >
             <span>Let&apos;s Talk</span>
             <span className="nav-cta-arrow">
               <svg width="14" height="14" viewBox="0 0 20 20" fill="none">

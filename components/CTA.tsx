@@ -30,7 +30,10 @@ export default function CTA() {
         </p>
         <div className="cta-actions">
           <a
-            href="mailto:hello@anjanex.com"
+            href="https://wa.me/917977933565?text=Hello%2C%20I%20would%20like%20to%20get%20in%20touch."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label='BuildTogether'
             className="btn btn--primary btn--large"
             data-hover
             data-magnetic
@@ -53,7 +56,13 @@ export default function CTA() {
               </svg>
             </span>
           </a>
-          <a href="#" className="btn btn--ghost-light" data-hover>
+          <a
+            href="https://wa.me/917977933565?text=Hello%2C%20I%20would%20like%20to%20get%20in%20touch."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label='BookCall'
+            className="btn btn--ghost-light" data-hover
+          >
             <span className="btn-text">Book a Free Strategy Call</span>
           </a>
         </div>

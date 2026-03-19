@@ -143,7 +143,14 @@ export default function Hero({ preloaderDone }: HeroProps) {
             animate={animateState === 'visible' ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 1.3, ease: entryEase, delay: 1.9 }}
           >
-            <a href="#contact" className="btn btn--primary" data-hover data-magnetic>
+            <a
+              href="https://wa.me/917977933565?text=Hello%2C%20I%20would%20like%20to%20get%20in%20touch."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label='StartBuilding'
+              className="btn btn--primary"
+              data-hover data-magnetic
+            >
               <span className="btn-text">Start Building</span>
               <span className="btn-icon">
                 <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
