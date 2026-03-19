@@ -45,14 +45,14 @@ export default function Footer() {
               >
                 <FaInstagram size={22} />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="footer-social"
                 aria-label="LinkedIn"
                 data-hover
               >
                 <FaLinkedinIn size={22} />
-              </a>
+              </a> */}
             </div>
             <span className="footer-copy">
               &copy; {new Date(Date.now()).getFullYear()} Anjanex. All rights reserved.
