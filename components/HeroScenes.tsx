@@ -143,76 +143,9 @@ export default function HeroScenes({ activeScene, started }: HeroScenesProps) {
 
   return (
     <div className="scene-perspective" ref={containerRef}>
-      {/* Scene 0: "stunning websites" - Browser Mockup */}
+      {/* Scene 0: "scalable products" - Dashboard + Metrics */}
       <div
         ref={scope0}
-        className={`scene${activeScene === 0 ? ' scene--active' : ''}`}
-        data-scene="0"
-        style={{ opacity: 0 }}
-      >
-        <div className="scene-layer" data-depth="0.2">
-          <div className="scene-blob scene-blob--1"></div>
-          <div className="scene-blob scene-blob--2"></div>
-        </div>
-        <div className="scene-layer" data-depth="0.5">
-          <div className="mockup-browser">
-            <div className="mockup-bar">
-              <span className="mockup-dot" style={{ background: '#ff5f57' }}></span>
-              <span className="mockup-dot" style={{ background: '#ffbd2e' }}></span>
-              <span className="mockup-dot" style={{ background: '#28ca41' }}></span>
-              <div className="mockup-url"></div>
-            </div>
-            <div className="mockup-body">
-              <div className="mockup-nav">
-                <div className="mockup-block" style={{ width: '40px', height: '8px', borderRadius: '4px', background: 'var(--accent)' }}></div>
-                <div className="mockup-nav-links">
-                  <div className="mockup-block" style={{ width: '24px', height: '4px' }}></div>
-                  <div className="mockup-block" style={{ width: '24px', height: '4px' }}></div>
-                  <div className="mockup-block" style={{ width: '24px', height: '4px' }}></div>
-                </div>
-              </div>
-              <div className="mockup-hero-area">
-                <div className="mockup-block" style={{ width: '70%', height: '12px', borderRadius: '6px' }}></div>
-                <div className="mockup-block" style={{ width: '50%', height: '8px', borderRadius: '4px', opacity: 0.4 }}></div>
-                <div className="mockup-block mockup-btn-block"></div>
-              </div>
-              <div className="mockup-cards">
-                <div className="mockup-card">
-                  <div className="mockup-card-img"></div>
-                  <div className="mockup-block" style={{ width: '60%', height: '5px', marginTop: '6px' }}></div>
-                </div>
-                <div className="mockup-card">
-                  <div className="mockup-card-img" style={{ background: 'linear-gradient(135deg,#a18cd1,#fbc2eb)' }}></div>
-                  <div className="mockup-block" style={{ width: '60%', height: '5px', marginTop: '6px' }}></div>
-                </div>
-                <div className="mockup-card">
-                  <div className="mockup-card-img" style={{ background: 'linear-gradient(135deg,#4facfe,#00f2fe)' }}></div>
-                  <div className="mockup-block" style={{ width: '60%', height: '5px', marginTop: '6px' }}></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="scene-layer" data-depth="0.9">
-          <div className="scene-float scene-float--perf">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2">
-              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-            </svg>
-            <span>99 Performance</span>
-          </div>
-          <div className="scene-float scene-float--code">&lt;/&gt;</div>
-          <div className="scene-float scene-float--responsive">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-              <rect x="5" y="2" width="14" height="20" rx="3" />
-              <line x1="12" y1="18" x2="12" y2="18.01" strokeWidth="2" />
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      {/* Scene 1: "scalable products" - Dashboard + Metrics */}
-      <div
-        ref={scope1}
         className={`scene${activeScene === 1 ? ' scene--active' : ''}`}
         data-scene="1"
         style={{ opacity: 0 }}
@@ -274,9 +207,9 @@ export default function HeroScenes({ activeScene, started }: HeroScenesProps) {
         </div>
       </div>
 
-      {/* Scene 2: "AI-powered solutions" - Neural Network */}
+      {/* Scene 1: "AI-powered solutions" - Neural Network */}
       <div
-        ref={scope2}
+        ref={scope1}
         className={`scene${activeScene === 2 ? ' scene--active' : ''}`}
         data-scene="2"
         style={{ opacity: 0 }}
@@ -318,9 +251,9 @@ export default function HeroScenes({ activeScene, started }: HeroScenesProps) {
         </div>
       </div>
 
-      {/* Scene 3: "brand experiences" - Design Composition */}
+      {/* Scene 2: "brand experiences" - Design Composition */}
       <div
-        ref={scope3}
+        ref={scope2}
         className={`scene${activeScene === 3 ? ' scene--active' : ''}`}
         data-scene="3"
         style={{ opacity: 0 }}
@@ -358,6 +291,73 @@ export default function HeroScenes({ activeScene, started }: HeroScenesProps) {
               <div className="mockup-block" style={{ width: '40px', height: '4px', marginTop: '6px' }}></div>
               <div className="mockup-block" style={{ width: '30px', height: '3px', marginTop: '3px', opacity: 0.4 }}></div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Scene 3: "stunning websites" - Browser Mockup */}
+      <div
+        ref={scope3}
+        className={`scene${activeScene === 0 ? ' scene--active' : ''}`}
+        data-scene="0"
+        style={{ opacity: 0 }}
+      >
+        <div className="scene-layer" data-depth="0.2">
+          <div className="scene-blob scene-blob--1"></div>
+          <div className="scene-blob scene-blob--2"></div>
+        </div>
+        <div className="scene-layer" data-depth="0.5">
+          <div className="mockup-browser">
+            <div className="mockup-bar">
+              <span className="mockup-dot" style={{ background: '#ff5f57' }}></span>
+              <span className="mockup-dot" style={{ background: '#ffbd2e' }}></span>
+              <span className="mockup-dot" style={{ background: '#28ca41' }}></span>
+              <div className="mockup-url"></div>
+            </div>
+            <div className="mockup-body">
+              <div className="mockup-nav">
+                <div className="mockup-block" style={{ width: '40px', height: '8px', borderRadius: '4px', background: 'var(--accent)' }}></div>
+                <div className="mockup-nav-links">
+                  <div className="mockup-block" style={{ width: '24px', height: '4px' }}></div>
+                  <div className="mockup-block" style={{ width: '24px', height: '4px' }}></div>
+                  <div className="mockup-block" style={{ width: '24px', height: '4px' }}></div>
+                </div>
+              </div>
+              <div className="mockup-hero-area">
+                <div className="mockup-block" style={{ width: '70%', height: '12px', borderRadius: '6px' }}></div>
+                <div className="mockup-block" style={{ width: '50%', height: '8px', borderRadius: '4px', opacity: 0.4 }}></div>
+                <div className="mockup-block mockup-btn-block"></div>
+              </div>
+              <div className="mockup-cards">
+                <div className="mockup-card">
+                  <div className="mockup-card-img"></div>
+                  <div className="mockup-block" style={{ width: '60%', height: '5px', marginTop: '6px' }}></div>
+                </div>
+                <div className="mockup-card">
+                  <div className="mockup-card-img" style={{ background: 'linear-gradient(135deg,#a18cd1,#fbc2eb)' }}></div>
+                  <div className="mockup-block" style={{ width: '60%', height: '5px', marginTop: '6px' }}></div>
+                </div>
+                <div className="mockup-card">
+                  <div className="mockup-card-img" style={{ background: 'linear-gradient(135deg,#4facfe,#00f2fe)' }}></div>
+                  <div className="mockup-block" style={{ width: '60%', height: '5px', marginTop: '6px' }}></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="scene-layer" data-depth="0.9">
+          <div className="scene-float scene-float--perf">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+            <span>99 Performance</span>
+          </div>
+          <div className="scene-float scene-float--code">&lt;/&gt;</div>
+          <div className="scene-float scene-float--responsive">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <rect x="5" y="2" width="14" height="20" rx="3" />
+              <line x1="12" y1="18" x2="12" y2="18.01" strokeWidth="2" />
+            </svg>
           </div>
         </div>
       </div>

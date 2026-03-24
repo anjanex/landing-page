@@ -8,7 +8,7 @@ interface HeroProps {
   preloaderDone: boolean;
 }
 
-const ROTATING_TEXTS = ['stunning websites', 'scalable products', 'AI-powered solutions', 'brand experiences'];
+const ROTATING_TEXTS = ['scalable products', 'AI-powered solutions', 'brand experiences', 'stunning websites'];
 const SCENE_INTERVAL = 4400;
 const SCENE_START_DELAY = 800;
 
