@@ -92,8 +92,8 @@ export default function Navigation() {
           <a href="#" className="nav-logo" onClick={handleAnchorClick}>
             <Image
               src={logoHero}
-              width={34}
-              height={34}
+              width={100}
+              height={100}
               alt="Anjanex logo"
               priority
             />

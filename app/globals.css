@@ -89,6 +89,9 @@ img { max-width: 100%; display: block; }
   font-weight: 800;
   color: var(--accent);
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .preloader-bar {
@@ -220,13 +223,13 @@ body::after {
 }
 
 .nav-logo img {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
 }
 
 .nav-logo-text {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 800;
   color: #f22f87;
   letter-spacing: -0.02em;
@@ -234,7 +237,7 @@ body::after {
 }
 
 .nav-logo-x {
-  color: #000000;
+  color: #303030;
 }
 
 .nav-logo-mark {

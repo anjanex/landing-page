@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import logoHero from '@/app/favicon.ico';
 
 export default function Preloader({ onComplete }: { onComplete: () => void }) {
   const [progress, setProgress] = useState(0);
@@ -33,7 +35,15 @@ export default function Preloader({ onComplete }: { onComplete: () => void }) {
   return (
     <div className={`preloader${done ? ' done' : ''}`} id="preloader">
       <div className="preloader-inner">
-        <div className="preloader-logo">A</div>
+        <div className="preloader-logo">
+          <Image
+            src={logoHero}
+            width={48}
+            height={48}
+            alt="Anjanex logo"
+            priority
+          />
+        </div>
         <div className="preloader-bar">
           <motion.div
             className="preloader-bar-fill"
