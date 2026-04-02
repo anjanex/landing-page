@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useCallback, useEffect, useRef } from 'react';
+import Image from 'next/image'
+import logoHero from '@/app/favicon.ico'
 
 export default function Navigation() {
   const [navHidden, setNavHidden] = useState(false);
@@ -88,8 +90,14 @@ export default function Navigation() {
       <nav className={`nav${navHidden ? ' hidden' : ''}`} id="nav">
         <div className="nav-inner">
           <a href="#" className="nav-logo" onClick={handleAnchorClick}>
-            <span className="nav-logo-mark">A</span>
-            <span className="nav-logo-text">ANJANEX</span>
+            <Image
+              src={logoHero}
+              width={34}
+              height={34}
+              alt="Anjanex logo"
+              priority
+            />
+            <span className="nav-logo-text">ANJANE<span className="nav-logo-x">X</span></span>
           </a>
           <div className="nav-links" id="navLinks">
             <a href="#services" className="nav-link" data-hover onClick={handleAnchorClick}>

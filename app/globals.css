@@ -210,12 +210,31 @@ body::after {
 .nav-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   font-family: var(--font-heading);
   font-size: 1.2rem;
   font-weight: 800;
   letter-spacing: -0.02em;
   z-index: 2;
+}
+
+.nav-logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.nav-logo-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f22f87;
+  letter-spacing: -0.02em;
+  font-family: var(--font-heading);
+}
+
+.nav-logo-x {
+  color: #000000;
 }
 
 .nav-logo-mark {
