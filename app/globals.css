@@ -94,6 +94,11 @@ img { max-width: 100%; display: block; }
   justify-content: center;
 }
 
+.preloader-logo img {
+  width: 52px;
+  height: 48px;
+}
+
 .preloader-bar {
   width: 120px;
   height: 2px;

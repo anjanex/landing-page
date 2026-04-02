@@ -38,8 +38,8 @@ export default function Preloader({ onComplete }: { onComplete: () => void }) {
         <div className="preloader-logo">
           <Image
             src={logoHero}
-            width={48}
-            height={48}
+            width={100}
+            height={100}
             alt="Anjanex logo"
             priority
           />
