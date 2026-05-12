@@ -20,15 +20,15 @@ import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 
 export default function Home() {
-  const [preloaderDone, setPreloaderDone] = useState(false);
+  // const [preloaderDone, setPreloaderDone] = useState(false);
 
   return (
     <SmoothScroll>
-      <Preloader onComplete={() => setPreloaderDone(true)} />
+      {/* <Preloader onComplete={() => setPreloaderDone(true)} /> */}
       <CustomCursor />
       <Navigation />
       <main>
-        <Hero preloaderDone={preloaderDone} />
+        {/* <Hero preloaderDone={preloaderDone} /> */}
         <Marquee />
         <Stats />
         <Services />
