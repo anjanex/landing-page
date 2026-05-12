@@ -28,7 +28,7 @@ export default function Home() {
       <CustomCursor />
       <Navigation />
       <main>
-        <Hero preloaderDone={preloaderDone} />
+        <Hero preloaderDone={true} />
         <Marquee />
         <Stats />
         <Services />
